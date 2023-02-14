@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">Bài 1</li>
+                <li class="sidebar-item">Bài 2</li>
+                <li class="sidebar-item">Bài 3</li>
+                <li class="sidebar-item">Bài 4</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-item show">
+                <div class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi laboru</div>
+                <h3 class="subject-title">Quản lí tuyển sinh</h3>
+
+                <div class="form-group">
+                    <div class="qlts-top">
+                        <input class="input-form qlts qlts-diemchuan" placeholder="Điểm chuẩn" type="text">
+                        <input type="text" class="input-form qlts qlts-khuvuc" placeholder="Chọn khu vực">
+                        <input type="text" class="input-form qlts qlts-doituong" placeholder="Chọn đối tượng">
+                    </div>
+                    
+                    <div class="qlts-bottom">
+                        <input class="input-form qlts qlts-mon1" placeholder="Điểm môn thứ 1" type="text">
+                        <input class="input-form qlts qlts-mon2" placeholder="Điểm môn thứ 2" type="text">
+                        <input class="input-form qlts qlts-mon3" placeholder="Điểm môn thứ 3" type="text">
+                    </div>
+                   
+                    <button class="btn-form btn-qlts">Kết quả</button>
+                </div>
+
+                <div class="result-block qlts-result">
+                    <p class="qlts-diem">
+                        Tổng điểm: <span class="qlts-tongdiem"></span>
+                        <p class="qlts-ketqua"></p>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi laboru</div>
+                <h3 class="subject-title">Tính tiền điện</h3>
+
+                <div class="form-group">
+                    <input type="text" class="input-form tiendien-hoten" placeholder="Nhập họ tên">
+                    <input type="text" class="input-form tiendien-sokw" placeholder="Nhập số kw">
+                    <br>
+                    <button class="btn-form btn-tiendien">Tính tiền điện</button>
+                </div>
+
+                <div class="result-block tiendien-result">
+                    <p class="tiendien-tien">
+                        Hộ dân: <span class="tiendien-ghihoten"></span>
+                        <br>
+                        <br>
+                        Tổng tiền điện: <span class="tiendien-tongtien"></span>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi laboru</div>
+                <h3 class="subject-title">Tính thuế thu nhập cá nhân</h3>
+
+                <div class="form-group">
+                    <input type="text" class="input-form thue-hoten" placeholder="Nhập họ tên">
+                    <input type="text" class="input-form thue-thunhapnam" placeholder="Tổng thu nhập năm">
+                    <input type="text" class="input-form thue-nguoiphuthuoc" placeholder="Số người phụ thuộc">
+                    <br>
+                    <button class="btn-form btn-thue">Tính tiền thuế</button>
+                </div>
+
+                <div class="result-block thue-result">
+                    <p class="thue-tien">
+                        Họ và tên: <span class="thue-ghihoten"></span>
+                        <br>
+                        <br>
+                        Tiền thuế: <span class="thue-tienthue"></span>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi laboru</div>
+                <h3 class="subject-title">Tính tiền cáp</h3>
+
+                <div class="form-group">
+                    <select name="" id="" class="input-form cap-loaikh">
+                        <option value="">Chọn loại khách hàng</option>
+                        <option value="1">Nhà dân</option>
+                        <option value="2">Doanh nghiệp</option>
+                    </select>
+                    <input type="text" class="input-form cap-makh" placeholder="Nhập mã khách hàng">
+                    <input type="text" class="input-form cap-kenhcaocap" placeholder="Số kênh cao cấp">
+                    <input type="text" class="input-form cap-ketnoi" placeholder="Nhập kết nối">
+                    <br>
+                    <button class="btn-form btn-cap">Tính tiền cáp</button>
+                </div>
+
+                <div class="result-block thue-result">
+                    <p class="cap-tien">
+                        Loại khách hàng: <span class="cap-ghiloaikh"></span>
+                        <br>
+                        <br>
+                        Mã khách hàng: <span class="cap-ghimakh"></span>
+                        <br>
+                        <br>
+                        Tiền cáp: <span class="cap-tiencap"></span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+</html>
